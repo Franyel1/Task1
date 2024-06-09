@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="JavaScript/custom.js"> </script>
+    <title>Ness PSI</title>
+</head>
+<body>
+    <!--Header-->
+    <header id="headerBack">
+        <div id="headerMain">
+            <div id="title">
+                <a href="index.html"><span id="PSI">PSI</span> Power Portal</a>
+            </div>
+        </div>
+    </header>
+    <!--NessPSI-->
+    <div class="PSIback" id="PSIbackNess">
+        <!--NessDescription-->
+        <div id="descriptionNess">
+            Ness : Damage Dealer and Healer
+        </div> 
+
+        <div id="nessAbout" style="margin:20px; display:none; ">
+        
+            <a href="nessPSI.html"><img id="nessTalkIMG" src="images/ness.png"/></a>
+            <div id="nessDialog">
+                <div id="nessDialogBox">
+                    <div id="nessDialogTag"><div>Ness</div></div>
+                    <div id="nessDialogText">
+                        "Hey there! I'm Ness, and I'm the leader of our team. I've got this awesome power called PSI, which lets me unleash all sorts of crazy psychic abilities. When we're in battles, I'm the one who deals the big damage and keeps you all safe with my healing skills. So, count on me to handle the toughest foes and keep the party in good shape!"
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <!--Offensive-->
+        <div class="titles">
+            Offensive - PSI abilities that deal damage to enemies
+        </div>
+
+        <table class="offensive">
+            <tr>
+                <col span="1" style="width: 13%; background-color: #6f7959">
+                <th>Name</th>
+                <th>Obtained</th>
+                <th>PP Cost</th>
+                <th>Target</th>
+                <th>Effect</th>
+            </tr>
+            <tr>
+                <td>Special α</td>
+                <td>Lv 8</td>
+                <td>10</td>
+                <td>All Enemies</td>
+                <td>Inflicts 40 - 120 damage</td>
+            </tr>
+            <tr>
+                <td>Flash α</td>
+                <td>Lv 18</td>
+                <td>8</td>
+                <td>All Enemies</td>
+                <td>Inflicts (85%)crying or (15%)feeling strange.</td>
+            </tr>
+            <tr>
+                <td>Special β</td>
+                <td>Lv 22</td>
+                <td>14</td>
+                <td>All Enemies</td>
+                <td>Inflicts 90 - 270 damage</td>
+            </tr>
+            <tr>
+                <td>Flash β</td>
+                <td>Lv 39</td>
+                <td>19</td>
+                <td>All Enemies</td>
+                <td>Inflicts (60%)crying, (10%)numbness, (10%)feeling strange or (15%)unconscious.</td>
+            </tr>
+            <tr>
+                <td>Special γ</td>
+                <td>Lv 49</td>
+                <td>40</td>
+                <td>All Enemies</td>
+                <td>Inflicts 160 - 480 damage</td>
+            </tr>
+            <tr>
+                <td>Flash γ</td>
+                <td>Lv 61</td>
+                <td>24</td>
+                <td>All Enemies</td>
+                <td>Inflicts (45%)crying, (20%)numbness, (15%)feeling strange or (20%)unconscious</td>
+            </tr>
+            <tr>
+                <td>Flash Ω</td>
+                <td>Lv 67</td>
+                <td>32</td>
+                <td>All Enemies</td>
+                <td>Inflicts (35%)crying, (15%)numbness, (10%)feeling strange or (40%)unconscious</td>
+            </tr>
+            <tr>
+                <td>Special Ω</td>
+                <td>Lv 75</td>
+                <td>98</td>
+                <td>All Enemies</td>
+                <td>Inflicts 320 - 960 damage</td>
+            </tr>
+        </table>
+
+        <!--Recovery-->
+        <div class="titles">
+            Recovery - PSI abilities that help recuperate your allies
+        </div>
+        <table class="recovery">
+            <tr>
+                <col span="1" style="width: 13%;">
+                <th>Name</th>
+                <th>Obtained</th>
+                <th>PP Cost</th>
+                <th>Target</th>
+                <th>Effect</th>
+            </tr>
+            <tr>
+                <td>Lifeup α</td>
+                <td>Lv 2</td>
+                <td>5</td>
+                <td>An Ally</td>
+                <td>Restores 75 - 125 HP</td>
+            </tr>
+            <tr>
+                <td>Healing α</td>
+                <td>Lv 10</td>
+                <td>5</td>
+                <td>An Ally</td>
+                <td>Heals cold, sleep, and sunstroke</td>
+            </tr>
+            <tr>
+                <td>Lifeup β</td>
+                <td>Lv 20</td>
+                <td>8</td>
+                <td>An Ally</td>
+                <td>Restores 225 - 375 HP</td>
+            </tr>
+            <tr>
+                <td>Healing β</td>
+                <td>Lv 24</td>
+                <td>8</td>
+                <td>An Ally</td>
+                <td>Heals cold, crying, nausea, poison, sleep, feeling strange, and sunstroke</td>
+            </tr>
+            <tr>
+                <td>Lifeup γ</td>
+                <td>Lv 39</td>
+                <td>13</td>
+                <td>An Ally</td>
+                <td>Restores All HP</td>
+            </tr>
+            <tr>
+                <td>Healing γ</td>
+                <td>Lv 53</td>
+                <td>20</td>
+                <td>An Ally</td>
+                <td>Heals cold, crying, diamond, nausea, paralysis, poison, sleep, feeling strange, sunstroke, and revives 1 Ally with 75% HP</td>
+            </tr>
+            <tr>
+                <td>Lifeup Ω</td>
+                <td>Lv 70</td>
+                <td>24</td>
+                <td>All Allie</td>
+                <td>Restores 300 - 500 HP</td>
+            </tr>
+        </table>
+
+        <!--Assist-->
+        <div class="titles">
+            Assist - PSI abilities that boost your allies
+        </div>
+        <table class="assist">
+            <tr>
+                <col span="1" style="width: 13%;">
+                <th>Name</th>
+                <th>Obtained</th>
+                <th>PP Cost</th>
+                <th>Target</th>
+                <th>Effect</th>
+            </tr>
+            <tr>
+                <td>Hypnosis α</td>
+                <td>Lv 4</td>
+                <td>6</td>
+                <td>An Enemy</td>
+                <td>Puts enemy to sleep</td>
+            </tr>
+            <tr>
+                <td>Shield α</td>
+                <td>Lv 12</td>
+                <td>6</td>
+                <td>An Ally</td>
+                <td>Reduces enemy attack damage by half</td>
+            </tr>
+            <tr>
+                <td>Paralysis α</td>
+                <td>Lv 14</td>
+                <td>6</td>
+                <td>An Enemy</td>
+                <td>Prevents an enemy from moving with numbness</td>
+            </tr>
+            <tr>
+                <td>Hypnosis Ω</td>
+                <td>Lv 27</td>
+                <td>18</td>
+                <td>All Enemies</td>
+                <td>Puts all enemies to sleep</td>
+            </tr>
+            <tr>
+                <td>Paralysis Ω</td>
+                <td>Lv 29</td>
+                <td>24</td>
+                <td>All Enemies</td>
+                <td>Prevents all enemies from moving with numbness</td>
+            </tr>
+            <tr>
+                <td>Shield β</td>
+                <td>Lv 34</td>
+                <td>10</td>
+                <td>An Ally</td>
+                <td>Reduces enemy attack damage by half, and reflects reduced damage back at enemy</td>
+            </tr>
+
+        </table>
+        <!--Other-->
+        <div class="titles">
+            Other - Miscellaneous PSI abilities
+        </div>
+        <table class="other">
+            <tr>
+                <col span="1" style="width: 13%;">
+                <th>Name</th>
+                <th>Obtained</th>
+                <th>PP Cost</th>
+                <th>Target</th>
+                <th>Effect</th>
+            </tr>
+            <tr>
+                <td>Teleport α</td>
+                <td>Taught</td>
+                <td>2</td>
+                <td>All Allies</td>
+                <td>Running start to to teleport to an area you have previouly visited</td>
+
+            </tr>
+            <tr>
+                <td>Teleport β</td>
+                <td>Taught</td>
+                <td>2</td>
+                <td>All Allies</td>                
+                <td>Run in circles to teleport to an area you have previously visited</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!--Footer-->
+    <section id="footerBack">
+        <div id="footerMain">
+            <div id="column1">
+                <div id="legalText">
+                    This fan-made website is not affiliated with the creators or 
+                    owners of Earthbound. All character information is for 
+                    entertainment and informational purposes only.
+                </div>
+                <div id="learnMore">
+                    Learn More:
+                    <div id="learnIcons">
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img src="images/tiktok.svg"/>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="images/youtube.svg"/>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div id="column2">
+                <div id="siteLinks">
+                    Site Links
+                </div>
+                <div>
+                    <nav>
+                        <ul id="links">
+                            <a href="index.html"> <li>Main</li></a> 
+                            <a href="about.html"> <li>About</li></a> 
+                            <a href="nessPSI.html"> <li>Ness&nbsp;&nbsp;- PSI</li></a>
+                            <a href="paulaPSI.html"> <li>Paula - PSI</li></a>
+                            <a href="jeffPSI.html"> <li>Jeff&nbsp;&nbsp;- PSI</li></a>
+                            <a href="pooPSI.html"> <li>Poo&nbsp;&nbsp;&nbsp;- PSI</li></a>
+                        </ul>
+                    </nav>
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <a id="toTop"><img src="images/arrowUp.png"></a>
+    
+</body>
+</html>

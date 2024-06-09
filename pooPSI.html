@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="JavaScript/custom.js"> </script>
+    <title>Poo PSI</title>
+</head>
+<body>
+    <!--Header-->
+    <header id="headerBack">
+        <div id="headerMain">
+            <div id="title">
+                <a href="index.html"><span id="PSI">PSI</span> Power Portal</a>
+            </div>
+        </div>
+    </header>
+
+    <!--PooPSI-->
+    <div class="PSIback" id="PSIbackPoo">
+
+        <!--Description-->
+        <div id="descriptionPoo">
+            Poo : Damage Dealer, Healer, and Support
+        </div> 
+
+        <div id="pooAbout"style="margin:20px; display:none; ">
+        
+            <a href="pooPSI.html"><img id="pooTalkIMG" src="images/poo.png"/></a>
+            <div id="pooDialog">
+                <div id="pooDialogBox">
+                    <div id="pooDialogTag"><div>Poo</div></div>
+                    <div id="pooDialogText">
+                        "Greetings, I'm Poo, the martial artist in the group. I've got incredible physical strength and some pretty unique PSI powers. I can use different elemental abilities and even heal the team when needed. When it comes to taking on enemies up close and personal, I'm your guy. I'll be our tank, ready to face the toughest foes."                
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <!--Offensive-->
+        <div class="titles">
+            Offensive - PSI abilities that deal damage to enemies
+        </div>
+
+        <table class="offensive">
+            <tr>
+                <col span="1" style="width: 17%; background-color: #6f7959">
+                <th>Name</th>
+                <th>Level</th>
+                <th>PP Cost</th>
+                <th>Target</th>
+                <th>Effect</th>
+            </tr>
+            <tr>
+                <td>PSI Freeze α</td>
+                <td>15</td>
+                <td>4</td>
+                <td>An Enemy</td>
+                <td>Inflicts 135 - 225 damage, decreases an enemy's physic shield's strength by 1; may completely freeze the enemy.</td>
+            </tr>
+            <tr>
+                <td>PSI Freeze ß</td>
+                <td>15</td>
+                <td>9</td>
+                <td>An Enemy</td>
+                <td>Inflicts 270 - 450 damage, decreases an enemy's physic shield's strength by 1.</td>
+            </tr>
+            <tr>
+                <td>PSI Thunder α</td>
+                <td>15</td>
+                <td>3</td>
+                <td>Random enemy</td>
+                <td>Inflicts 60 - 180 damage, enemies psychic/power shiled immediately destroyed.</td>
+            </tr>
+            <tr>
+                <td>Brainshock α</td>
+                <td>Lv 24</td>
+                <td>10</td>
+                <td>An Enemy</td>
+                <td>Makes enemy feel strange</td>
+            </tr>
+            <tr>
+                <td>Brainshock Ω</td>
+                <td>Lv 44</td>
+                <td>30</td>
+                <td>All Enemies</td>
+                <td>Makes enemies feel strange</td>
+            </tr>
+            <tr>
+                <td>PSI Thunder ß</td>
+                <td>Lv 15</td>
+                <td>7 </td>
+                <td>Random Enemies</td>
+                <td>Inflicts 60 - 180 damage twice, enemies psychic/power shiled immediately destroyed</td>
+            </tr>
+            <tr>
+                <td>PSI Freeze γ</td>
+                <td>Lv 33</td>
+                <td>18</td>
+                <td>An enemy</td>
+                <td>Inflicts 405 - 675 damage, decreases an enemy's physic shield's strength by 1; may completely freeze the enemy.</td>
+            </tr>
+            <tr>
+                <td>PSI Thunder γ</td>
+                <td>Lv 57</td>
+                <td>16</td>
+                <td>Random enemies</td>
+                <td>Inflicts 100 - 300 damage thrice, enemies psychic/power shiled immediately destroyed</td>
+            </tr>
+            <tr>
+                <td>PSI Thunder Ω</td>
+                <td>Lv 55</td>
+                <td>20</td>
+                <td>Random enemies</td>
+                <td>Inflicts 100 - 300 damage four times, enemies psychic/power shiled immediately destroyed</td>
+            </tr>
+        </table>
+
+        <!--Recovery-->
+        <div class="titles">
+            Recovery - PSI abilities that help recuperate your allies
+        </div>
+        <table class="recovery">
+            <tr>
+                <col span="1" style="width: 13%;">
+                <th>Name</th>
+                <th>Obtained</th>
+                <th>PP Cost</th>
+                <th>Target</th>
+                <th>Effect</th>
+            </tr>
+            <tr>
+                <td>Lifeup α</td>
+                <td>Lv 15</td>
+                <td>5</td>
+                <td>An Ally</td>
+                <td>Restores 75 - 125 HP</td>
+            </tr>
+            <tr>
+                <td>Healing α</td>
+                <td>Lv 15</td>
+                <td>5</td>
+                <td>An Ally</td>
+                <td>Heals cold, sleep, and sunstroke</td>
+            </tr>
+            <tr>
+                <td>Lifeup β</td>
+                <td>Lv 15</td>
+                <td>8</td>
+                <td>An Ally</td>
+                <td>Restores 225 - 375 HP</td>
+            </tr>
+            <tr>
+                <td>Healing β</td>
+                <td>Lv 15</td>
+                <td>8</td>
+                <td>An Ally</td>
+                <td>Heals cold, crying, nausea, poison, sleep, feeling strange, and sunstroke</td>
+            </tr>
+            <tr>
+                <td>Lifeup γ</td>
+                <td>Lv 46</td>
+                <td>13</td>
+                <td>An Ally</td>
+                <td>Restores All HP</td>
+            </tr>
+            <tr>
+                <td>Healing γ</td>
+                <td>Lv 36</td>
+                <td>20</td>
+                <td>An Ally</td>
+                <td>Heals cold, crying, diamond, nausea, paralysis, poison, sleep, feeling strange, sunstroke, and revives 1 Ally with 75% HP</td>
+            </tr>
+
+
+        </table>
+        <!--Assist-->
+        <div class="titles">
+            Assist - PSI abilities that boost your allies
+        </div>
+        <table class="recovery">
+            <tr>
+                <col span="1" style="width: 17%; background-color: #6f7959">
+                <th>Name</th>
+                <th>Level</th>
+                <th>PP Cost</th>
+                <th>Target</th>
+                <th>Effect</th>
+            </tr>
+            <tr>
+                <td>PSI Shield α</td>
+                <td>Lv 15</td>
+                <td>8</td>
+                <td>All Allies</td>
+                <td>Shields all party members and reflects PSI attacks back to the enemy</td>
+            </tr>
+            <tr>
+                <td>PSI Magnet α</td>
+                <td>Lv 21</td>
+                <td>0</td>
+                <td>One Enemy</td>
+                <td>Absorbs 2-8 PP</td>
+            </tr>
+            <tr>
+                <td>PSI Magnet Ω</td>
+                <td>Lv 27</td>
+                <td>0</td>
+                <td>All Enemies</td>
+                <td>Absorbs 2-8 PP</td>
+            </tr>
+            <tr>
+                <td>PSI Shield Σ</td>
+                <td>Lv 15</td>
+                <td>24</td>
+                <td>All Allies</td>
+                <td>Shields all party members and reflects PSI attacks back to the enemy</td>
+            </tr>
+            <tr>
+                <td>PSI Shield ß</td>
+                <td>Lv 16</td>
+                <td>14</td>
+                <td>All Allies</td>
+                <td>Shields all party members and reflects PSI attacks back to the enemy</td>
+            </tr>
+            <tr>
+                <td>PSI Shield Ω</td>
+                <td>Lv 51</td>
+                <td>42</td>
+                <td>All Allies</td>
+                <td>Shields all party members and reflects PSI attacks back to the enemy</td>
+            </tr>   
+        </table>
+        <!--Other-->
+        <div class="titles">
+            Other - Miscellaneous PSI abilities
+        </div>
+        <table class="other">
+            <tr>
+                <col span="1" style="width: 13%;">
+                <th>Name</th>
+                <th>Obtained</th>
+                <th>PP Cost</th>
+                <th>Target</th>
+                <th>Effect</th>
+            </tr>
+            <tr>
+                <td>Teleport α</td>
+                <td>17</td>
+                <td>2</td>
+                <td>All Allies</td>
+                <td>Running start to to teleport to an area you have previouly visited</td>
+
+            </tr>
+            <tr>
+                <td>Teleport β</td>
+                <td>18</td>
+                <td>2</td>
+                <td>All Allies</td>                
+                <td>Run in circles to teleport to an area you have previously visited</td>
+            </tr>
+        </table>
+    
+    </div>
+    
+
+
+    <!--Footer-->
+    <section id="footerBack">
+        <div id="footerMain">
+            <div id="column1">
+                <div id="legalText">
+                    This fan-made website is not affiliated with the creators or 
+                    owners of Earthbound. All character information is for 
+                    entertainment and informational purposes only.
+                </div>
+                <div id="learnMore">
+                    Learn More:
+                    <div id="learnIcons">
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img src="images/tiktok.svg"/>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="images/youtube.svg"/>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div id="column2">
+                <div id="siteLinks">
+                    Site Links
+                </div>
+                <div>
+                    <nav>
+                        <ul id="links">
+                            <a href="index.html"> <li>Main</li></a> 
+                            <a href="about.html"> <li>About</li></a> 
+                            <a href="nessPSI.html"> <li>Ness&nbsp;&nbsp;- PSI</li></a>
+                            <a href="paulaPSI.html"> <li>Paula - PSI</li></a>
+                            <a href="jeffPSI.html"> <li>Jeff&nbsp;&nbsp;- PSI</li></a>
+                            <a href="pooPSI.html"> <li>Poo&nbsp;&nbsp;&nbsp;- PSI</li></a>
+                        </ul>
+                    </nav>
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <a id="toTop"><img src="images/arrowUp.png"></a>
+    
+</body>
+</html>

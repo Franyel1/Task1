@@ -2,25 +2,502 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Demo media queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSI Power Portal</title>
 
     <!-- Media query for narrow browser width -->
-    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="mobile.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
 
     <!-- Media query for medium browser width -->
-    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="tablet.css">
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
 
     <!-- Media query for full browser width -->
-    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
 
     <!-- Prevent smartphones from scaling pages down -->
     <meta name="viewport" content="initial-scale=1">
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="JavaScript/custom.js"> </script>
 
 </head>
 <body>
-    
-    <div id="box">
-        
+    <div id="lbBack">
+        <div id="lbBox">
+
+            <div id="lbCloseButton">
+                <img src="images/closeButton.png" class="myImage"/>
+            </div>
+            <div id="lbText">
+                <h1>Thanks for checking our mini-pedia out!</h1>
+                <p>Spend as much time as you like exploring the characters of Earthbound</p>
+            </div>
+
+        </div>
     </div>
+
+
+    <!--Header Section-->
+    <header id="headerBack">
+        <div id="headerMain">
+            <div id="title">
+                <a href="index.html"><span id="PSI">PSI</span> Power Portal</a>
+            </div>
+        </div>
+        
+    </header>
+
+    <!--Hero Section-->
+    <div id="pixelBG">
+        <section id="heroBG">
+            
+            <div id="firstIcons">
+                <img id="nessHeroIcon" class="icon" src="images/ness.png"/>
+                <img id="paulaHeroIcon"class="icon" src="images/paula.png"/>
+            </div>
+
+            <div id="heroMain">
+                <img id="butter2" src="images/butter2.png">
+                <img id="butter1" src="images/butter1.png">
+                <img id="gift" src="images/gift.png">
+
+                <p id="quote">
+                    “Heroes with <span>Unique Abilities</span>:A Closer Look at <span>Earthbound's Crew</span>”
+                </p>
+
+                <div id="heroButtons">
+
+                    <div id="firstRowButtons">
+                        <div class="buttonContainer">
+                            <a id="nessLink"><img src="images/button1.png"/>
+                            <div class="buttonText" id="Ness">Ness</div></a>
+        
+                        </div>
+                        
+                        <div class="buttonContainer">
+                            <a id="jeffLink"><img id="jeffButton" src="images/button1.png"/>
+                            <div class="buttonText" id="Jeff">Jeff</div></a>
+        
+                        </div>
+                    </div>
+
+                    <div id="secondRowButtons">
+                        <div class="buttonContainer">
+                            <a id="paulaLink"><img src="images/button1.png"/>
+                            <div class="buttonText" id="Paula">Paula</div></a>
+        
+                        </div>
+
+                        <div class="buttonContainer">
+                            <a id="pooLink"><img id="pooButton" src="images/button1.png"/>
+                            <div class="buttonText" id="Poo">Poo</div></a>
+        
+                        </div>
+                    </div>
+
+                </div>
+
+        
+                <img id="tree3" src="images/tree3.png" />
+                <img id="tree4" src="images/tree4.png" />
+            </div>
+            <div id="secondIcons">
+                <img id="jeffHeroIcon"class="icon" src="images/jeff.png"/>
+                <img id="pooHeroIcon"class="icon" src="images/poo.png"/>
+            </div>
+        </section>  
+            
+    </div>
+    <!--Transition Section-->
+    <section id="transBack">
+        <div id="transMain">
+
+        
+            <div id="menuScrn">
+                <div id="menuWords">
+                    Check Out Each Characters' PSI Powers
+                </div>
+                <div id="transButton">
+                    <a href="about.html"><img src="images/button1.png"/>
+                    <div id="yes">YES</div></a>
+
+                </div>
+
+            </div>
+
+
+            <div id="charArchiveBanner">
+
+                <img id="down1" src="images/arrowDown.png"/>
+                <div>&nbsp;Character&nbsp;<span>Archive&nbsp;</span></div>
+                <img id="down2"src="images/arrowDown.png"/>
+
+            </div>
+
+        </div>
+    </section>
+    <!--Ness Section-->
+    <div id="pixelBG">
+        <section id="nessBack">
+        
+            <div id="nessMain">
+                
+                <div id="nessCol1">
+                    <div id="nessNameTag">
+                        <div>Ness</div>
+                    </div>
+
+                    <p id="nessText1">
+                        Ness's story begins in the quaint and seemingly peaceful town 
+                        of Onett. 
+                        </br></br>
+                        Onett is a typical suburban town, and Ness is an ordinary boy 
+                        with a penchant for baseball and a loving family. However, 
+                        everything changes when a mysterious meteorite crashes near 
+                        his house. 
+                        </br></br>
+                        This meteorite event is not just a random occurrence; it's a 
+                        harbinger of the impending chaos and danger threatening the world.
+                        </br></br>
+                        As Ness investigates the meteorite crash site, he discovers 
+                        that it is connected to a series of strange occurrences and 
+                        an encroaching evil force. He soon becomes embroiled in a 
+                        grand adventure that will push him far beyond the confines 
+                        of his small town. 
+                        </br></br>
+                        Ness is joined by a diverse group of companions, each with 
+                        their unique abilities and personalities, as they set out on 
+                        a quest to save the world from an otherworldly threat.
+                    </p>
+                    <img id="nessMap" src="images/onett.png"/>
+                    
+        
+                </div>
+
+                <div id="nessCol2">
+
+                    <img id="phone" src="images/phone.png"/>
+
+                    <div id="nessIMG">
+                        <img id="nessArch" src="images/nessBat.png"/>
+                        <div id="nessHeyDiv">
+                            <img id="nesshey" src="images/speechBubble.png"/>
+                            <p>&nbsp;Tch!</p>
+                        </div>
+                    </div>
+    
+                    <p id="nessText2">
+                        Throughout his epic journey, Ness encounters bizarre creatures, 
+                        faces off against formidable foes, and explores a surreal and 
+                        imaginative world filled with humor, satire, and touching moments. 
+                        </br></br>
+                        His adventures take him to various towns, landscapes, and dungeons, 
+                        each with its own challenges and stories. Along the way, Ness and 
+                        his friends forge powerful bonds, confront their inner demons, and 
+                        learn important life lessons.
+                        </br></br>
+                        Ness's character develops significantly as he faces these 
+                        challenges, evolving from an ordinary boy into a true hero.
+                        </br></br>
+                        His determination, courage, and the support of his friends are 
+                        essential as they strive to stop the impending cataclysmic event 
+                        that could end life as they know it.
+                    </p>
+                </div>
+
+                <div id="nessBottomIcon">
+                    <img src="images/smash.png">
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!--Paula Section-->
+    <div id="pixelBG">
+        <section id="paulaBack">
+        
+            <div id="paulaMain">
+                
+                <div id="paulaCol1">
+                   
+                    <div id="paulaNameTag">
+                        <div>Paula</div>
+                    </div>
+
+                    <p id="paulaText1">
+                        Her journey commences in the serene town of Twoson, which, 
+                        like Onett, is one of the many unique and quirky locations 
+                        in the game's world.
+                        What makes Paula stand out is her psychic ability.
+                        </br></br>
+                        Her psychic gifts are not just a superficial aspect of her 
+                        character but are pivotal to both the game's storyline and
+                         gameplay mechanics. Paula's psychic powers include abilities 
+                         like PK Fire, PK Freeze, and PK Thunder, which she uses to 
+                         unleash powerful attacks in battle and to solve various puzzles 
+                         in the game world.
+                        </br></br>
+                        Paula's psychic abilities are integral to unraveling the mysteries 
+                        of the game's narrative. As the game's plot unfolds, it becomes 
+                        clear that a malevolent alien force, 
+                        </br></br>
+                        Giygas, is threatening the world with destruction. Paula's 
+                        psychic powers are instrumental in identifying and confronting 
+                        this cosmic evil.
+                        </br></br>
+                        Her telepathic communication and empathetic abilities allow her to 
+                        connect with other characters, providing important information, 
+                        guidance, and support to Ness and the party in their quest to 
+                        thwart Giygas's plans.
+
+                    </p>
+
+                    <img id="paulaMap" src="images/twoson.png"/>
+                    
+    
+                </div>
+
+                <div id="paulaCol2">
+
+                    <img id="teddy" src="images/teddy.png"/>
+
+                    <div id="paulaIMG">
+                        <img id="paulaArch" src="images/paulaJump.png"/>
+                        <div id="paulaHeyDiv">
+                            <img id="paulahey" src="images/speechBubble.png"/>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Ouch!</p>
+                        </div>
+                    </div>
+    
+                    <p id="paulaText2">
+                        Paula is known for her kindness and compassion with others, 
+                        making her a beloved character in Earthbound's story.
+                        </br></br>
+                        Paula's character development is marked by her growing 
+                        confidence in her psychic powers and her role as a key 
+                        member of the group determined to save the world. 
+                        </br></br>
+                        Her strong sense of empathy and compassion not only make 
+                        her a valuable ally but also a beloved character among 
+                        players as well.
+                    </p>
+                </div>
+                <div id="paulaBottomIcon">
+                    <img id="PKfire"src="images/PKfire.png" />
+                    <img id="PKthunder"src="images/PKthunder.png" />
+                    <img id="PKfreeze"src="images/PKfreeze.png" />
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    <!--jeff Section-->
+    <div id="pixelBG">
+        <section id="jeffBack">
+        
+            <div id="jeffMain">
+                
+                <div id="jeffCol1">
+                   
+                    <div id="jeffNameTag">
+                        <div>Jeff</div>
+                    </div>
+
+                    <p id="jeffText1">
+                        Jeff's journey begins in the town of Winters. Unlike 
+                        Ness and Paula, Jeff is introduced to players in a different
+                         setting, as he is initially attending a boarding school in 
+                         Winters. This environment is more academic and structured 
+                         compared to the adventures of Ness and Paula.
+                        </br></br>
+                        What sets Jeff apart from the other characters is his 
+                        proficiency in technology and gadgets. He's an inventor 
+                        and uses various gadgets and items to assist the party 
+                        throughout their adventure. This skill adds another layer
+                         of complexity to the gameplay, as his technical know-how 
+                         provides unique solutions to puzzles and challenges.
+                        </br></br>
+                        Jeff's adventure takes a significant turn when he receives 
+                        a telepathic message from Paula, reaching out to him and 
+                        informing him of the impending danger to the world. 
+                        This message is a pivotal moment in the game, as it leads 
+                        Jeff to make a crucial decision.
+                        </br></br>
+                        Despite his initial academic obligations and distance from 
+                        the events happening in Onett and Twoson, Jeff decides to 
+                        leave his boarding school behind to join the quest to unlock
+                         the game's mysteries.
+
+                    </p>
+
+                    <img id="jeffMap" src="images/winters.png"/>
+                    
+    
+                </div>
+
+                <div id="jeffCol2">
+
+                    <img id="monkey" src="images/monkey.png"/>
+
+                    <div id="jeffIMG">
+                        <img id="jeffArch" src="images/jeffSmug.png"/>
+                        <div id="jeffHeyDiv">
+                            <img id="jeffhey" src="images/speechBubble.png"/>
+                            <p>Hey!</p>
+                        </div>
+                    </div>
+    
+                    <p id="jeffText2">
+                        The contrast between Jeff's initial academic, 
+                        controlled environment and the wild, unpredictable 
+                        world he enters with Ness and Paula highlights the 
+                        transformative nature of their adventure. 
+                        </br></br>
+                        It's a journey of self-discovery for Jeff as he steps
+                         out of his comfort zone to embrace the unknown and 
+                         contribute to the group's mission to save the world.
+                        </br></br>
+                        Jeff's character arc demonstrates the importance of 
+                        adaptability, courage, and the willingness to embrace 
+                        the unexpected.                    
+                    </p>
+                </div>
+
+                <div id="jeffBottomIcon">
+                    <img src="images/andonuts.png"/>
+
+                    <div id="andonutsBox">
+                        <P>
+                            Jeff's dad, Dr. Andonuts, plays a vital role 
+                            by providing valuable support to his son and 
+                            the team.
+                        </P>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!--poo Section-->
+    <div id="pixelBG">
+        <section id="pooBack">
+        
+            <div id="pooMain">
+                
+                <div id="pooCol1">
+                   
+                    <div id="pooNameTag">
+                        <div>Poo</div>
+                    </div>
+
+                    <p id="pooText1">
+                        Poo hails from the exotic and enigmatic land of Dalaam. Dalaam is a place filled with rich Eastern culture, and it's a stark contrast to the suburban towns where Ness and Paula begin their journeys. Poo's introduction adds a touch of mysticism and tradition to the game's diverse and vibrant world.
+                        </br></br>
+                        Poo's story is one of personal growth and self-discovery, as well as a journey to embrace his destiny. When Ness and his friends learn of the impending threat posed by Giygas, they receive word that they need a fourth member to complete their group. 
+                        </br></br>
+                        Poo becomes this essential fourth member.
+                        </br></br>
+                        However, Poo's journey to join Ness and the others is not a simple one. It's marked by a rigorous path of self-discovery and martial training. 
+                        </br></br>
+                        In Dalaam, Poo belongs to a noble family, and he is destined to become a master of martial arts. His training includes not only physical combat but also mental and spiritual discipline.
+                        </br></br>
+                        The path that Poo must undertake involves mastering a series of demanding trials and tests, each meant to develop his physical abilities, hone his combat skills, and cultivate his inner strength. 
+                        </br></br>
+                        This training symbolizes the importance of tradition, discipline, and personal growth.
+                    </p>
+
+                    <img id="pooMap" src="images/dalaam.png"/>
+                    
+    
+                </div>
+
+                <div id="pooCol2">
+
+                    <img id="statue" src="images/statue.png"/>
+
+                    <div id="pooIMG">
+                        <img id="pooArch" src="images/poo.png"/>
+                        <div id="pooHeyDiv">
+                            <img id="poohey" src="images/speechBubble.png"/>
+                            <p>Hmm&nbsp;</p>
+                        </div>
+                            
+                    </div>
+    
+                    <p id="pooText2">
+                        Poo's character is deeply rooted in these traditions, and as he progresses through his training, players witness his development from an adept student into a formidable warrior. 
+                        </br></br>
+                        Poo's journey and training underscore the significance of embracing one's heritage and fulfilling one's destiny. 
+                        </br></br>
+                        His character arc shows the value of discipline and self-discovery as he transitions from a young heir to a powerful martial artist and a key member of the group determined to confront Giygas and his minions.
+                    </p>
+                </div>
+
+                <div id="pooBottomIcon">
+                    <img src="images/evilStatue.png" />
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <section id="footerBack">
+        <div id="footerMain">
+            
+            <div id="column1">
+                <div id="legalText">
+                    This fan-made website is not affiliated with the creators or 
+                    owners of Earthbound. All character information is for 
+                    entertainment and informational purposes only.
+                </div>
+                <div id="learnMore">
+                    Learn More:
+                    <div id="learnIcons">
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img src="images/tiktok.svg"/>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="images/youtube.svg"/>
+                        </a> 
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="column2">
+                <div id="siteLinks">
+                    Site Links
+                </div>
+
+                
+                <div>
+                    
+                    <nav>
+                        <ul id="links">
+                            <a href="index.html"> <li>Main</li></a> 
+                            <a href="about.html"> <li>About</li></a> 
+                            <a href="nessPSI.html"> <li>Ness&nbsp;&nbsp;- PSI</li></a>
+                            <a href="paulaPSI.html"> <li>Paula - PSI</li></a>
+                            <a href="jeffPSI.html"> <li>Jeff&nbsp;&nbsp;- PSI</li></a>
+                            <a href="pooPSI.html"> <li>Poo&nbsp;&nbsp;&nbsp;- PSI</li></a>
+                        </ul>
+                    </nav>
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <a id="toTop"><img src="images/arrowUp.png"></a>
+    
+
+    
 </body>
 </html>

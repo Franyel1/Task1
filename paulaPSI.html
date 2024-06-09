@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="JavaScript/custom.js"> </script>
+    <title>Paula PSI</title>
+</head>
+<body>
+        <!--Header-->
+        <header id="headerBack">
+            <div id="headerMain">
+                <div id="title">
+                    <a href="index.html"><span id="PSI">PSI</span> Power Portal</a>
+                </div>
+            </div>
+        </header>
+        <!--PaulaPSI-->
+        <div class="PSIback" id="PSIbackPaula">
+
+            <!--Description-->
+            <div id="descriptionPaula">
+                Paula : Damage Dealer and Support
+            </div> 
+
+            <div id="paulaAbout"style="margin:20px; display:none; ">
+        
+                <a href="paulaPSI.html"><img id="paulaTalkIMG" src="images/paula.png"/></a>
+                <div id="paulaDialog">
+                    
+                    <div id="paulaDialogBox">
+                        <div id="paulaDialogTag"><div>Paula</div></div>
+                        <div id="paulaDialogText">
+                            "Hi, I'm Paula! I may look sweet, but I'm a powerhouse when it comes to PSI attacks. My abilities pack a punch and can take down enemies with ease. I specialize in elemental and status-inflicting attacks, which can turn the tide in our favor. I'm here to make sure we knock out our enemies and bosses in style!"                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Offensive-->
+            <div class="titles">
+                Offensive - PSI abilities that deal damage to enemies
+            </div>
+
+            <table class="offensive">
+                <tr>
+                    <col span="1" style="width: 17%; background-color: #6f7959">
+                    <th>Name</th>
+                    <th>Level</th>
+                    <th>PP Cost</th>
+                    <th>Target</th>
+                    <th>Effect</th>
+                </tr>
+                <tr>
+                    <td>PSI Freeze α</td>
+                    <td>Lv 3</td>
+                    <td>4</td>
+                    <td>An Enemy</td>
+                    <td>Inflicts 135 - 225 damage, decreases an enemy's physic shield's strength by 1; may completely freeze the enemy.</td>
+                </tr>
+                <tr>
+                    <td>PSI Fire α</td>
+                    <td>Lv 3</td>
+                    <td>6</td>
+                    <td>Row of enemies</td>
+                    <td>Inflicts 60 - 100 damage, decreases an enemy's physic shield's strength by 1.</td>
+                </tr>
+                <tr></td>
+                </tr>
+                <tr>
+                    <td>PSI Thunder α</td>
+                    <td>Lv 8</td>
+                    <td>3</td>
+                    <td>Random enemy</td>
+                    <td>Inflicts 60 - 180 damage, enemies psychic/power shiled immediately destroyed.</td>
+                </tr>
+                <tr>
+                    <td>PSI Freeze ß</td>
+                    <td>Lv 11</td>
+                    <td>9</td>
+                    <td>An Enemy</td>
+                    <td>Inflicts 270 - 450 damage, decreases an enemy's physic shield's strength by 1.</td>
+                </tr>
+                <tr>
+                    <td>PSI Fire ß</td>
+                    <td>Lv 19</td>
+                    <td>12</td>
+                    <td>Row of Enemies</td>
+                    <td>Inflicts 120 - 200 damage, decreases an enemy's physic shield's strength by 1.</td>
+                </tr>
+                <tr>
+                    <td>PSI Thunder ß</td>
+                    <td>Lv 25</td>
+                    <td>7 </td>
+                    <td>Random Enemies</td>
+                    <td>Inflicts 60 - 180 damage twice, enemies psychic/power shiled immediately destroyed</td>
+                </tr>
+                <tr>
+                    <td>PSI Freeze γ</td>
+                    <td>Lv 31</td>
+                    <td>18</td>
+                    <td>An enemy</td>
+                    <td>Inflicts 405 - 675 damage, decreases an enemy's physic shield's strength by 1; may completely freeze the enemy.</td>
+                </tr>
+                <tr>
+                    <td>PSI Fire γ</td>
+                    <td>Lv 37</td>
+                    <td>20</td>
+                    <td>Row of Enemies</td>
+                    <td>Inflicts 180 - 300 damage, decreases an enemy's physic shield's strength by 1.</td>
+                </tr>
+                <tr>
+                    <td>PSI Freeze Ω</td>
+                    <td>Lv 46</td>
+                    <td>28</td>
+                    <td>An enemy</td>
+                    <td>Inflicts 540 - 900 damage, decreases an enemy's physic shield's strength by 1; may completely freeze the enemy.</td>
+                </tr>
+                <tr>
+                    <td>PSI Thunder γ</td>
+                    <td>Lv 57</td>
+                    <td>16</td>
+                    <td>Random enemies</td>
+                    <td>Inflicts 100 - 300 damage thrice, enemies psychic/power shiled immediately destroyed</td>
+                </tr>
+                <tr>
+                    <td>PSI Fire Ω</td>
+                    <td>Lv 64</td>
+                    <td>42</td>
+                    <td>Row of Enemies</td>
+                    <td>Inflicts 240 - 400 damage, decreases an enemy's physic shield's strength by 1.</td>
+                </tr>
+            </table>
+
+            <!--Assist-->
+            <div class="titles">
+                Assist - PSI abilities that boost your allies
+            </div>
+            <table class="recovery">
+                <tr>
+                    <col span="1" style="width: 17%; background-color: #6f7959">
+                    <th>Name</th>
+                    <th>Level</th>
+                    <th>PP Cost</th>
+                    <th>Target</th>
+                    <th>Effect</th>
+                </tr>
+                <tr>
+                    <td>PSI Shield α</td>
+                    <td>Lv 6</td>
+                    <td>8</td>
+                    <td>All Allies</td>
+                    <td>Shields all party members and reflects PSI attacks back to the enemy</td>
+                </tr>
+                <tr>
+                    <td>PSI Magnet α</td>
+                    <td>Lv 15</td>
+                    <td>0</td>
+                    <td>One Enemy</td>
+                    <td>Absorbs 2-8 PP</td>
+                </tr>
+                <tr>
+                    <td>Offense Up α</td>
+                    <td>Lv 21</td>
+                    <td>10S</td>
+                    <td>An Ally</td>
+                    <td>Raises Offence</td>
+                </tr>
+                <tr>
+                    <td>PSI Magnet Ω</td>
+                    <td>Lv 24</td>
+                    <td>0</td>
+                    <td>All Enemies</td>
+                    <td>Absorbs 2-8 PP</td>
+                </tr>
+                <tr>
+                    <td>PSI Shield Σ</td>
+                    <td>Lv 27</td>
+                    <td>24</td>
+                    <td>All Allies</td>
+                    <td>Shields all party members and reflects PSI attacks back to the enemy</td>
+                </tr>
+                <tr>
+                    <td>Defense down α</td>
+                    <td>Lv 29</td>
+                    <td>6</td>
+                    <td>An Enemy</td>
+                    <td>Lowers enemy defense</td>
+                </tr>
+                <tr>
+                    <td>Offense Up Ω</td>
+                    <td>Lv 40</td>
+                    <td>30</td>
+                    <td>All Allies</td>
+                    <td>Raises Offence</td>
+                </tr>
+                <tr>
+                    <td>PSI Shield ß</td>
+                    <td>Lv 51</td>
+                    <td>14</td>
+                    <td>All Allies</td>
+                    <td>Shields all party members and reflects PSI attacks back to the enemy</td>
+                </tr>
+                <tr>
+                    <td>Defense down Ω</td>
+                    <td>Lv 54</td>
+                    <td>18</td>
+                    <td>All Enemies</td>
+                    <td>Lowers enemy defense</td>
+                </tr>
+                <tr>
+                    <td>PSI Shield Ω</td>
+                    <td>Lv 60</td>
+                    <td>42</td>
+                    <td>All Allies</td>
+                    <td>Shields all party members and reflects PSI attacks back to the enemy</td>
+                </tr>
+            </table>
+            
+
+        </div>
+
+    <!--Footer-->
+    <section id="footerBack">
+        <div id="footerMain">
+            <div id="column1">
+                <div id="legalText">
+                    This fan-made website is not affiliated with the creators or 
+                    owners of Earthbound. All character information is for 
+                    entertainment and informational purposes only.
+                </div>
+                <div id="learnMore">
+                    Learn More:
+                    <div id="learnIcons">
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img src="images/tiktok.svg"/>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="images/youtube.svg"/>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div id="column2">
+                <div id="siteLinks">
+                    Site Links
+                </div>
+                <div>
+                    <nav>
+                        <ul id="links">
+                            <a href="index.html"> <li>Main</li></a> 
+                            <a href="about.html"> <li>About</li></a> 
+                            <a href="nessPSI.html"> <li>Ness&nbsp;&nbsp;- PSI</li></a>
+                            <a href="paulaPSI.html"> <li>Paula - PSI</li></a>
+                            <a href="jeffPSI.html"> <li>Jeff&nbsp;&nbsp;- PSI</li></a>
+                            <a href="pooPSI.html"> <li>Poo&nbsp;&nbsp;&nbsp;- PSI</li></a>
+                        </ul>
+                    </nav>
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <a id="toTop"><img src="images/arrowUp.png"></a>
+    
+</body>
+</html>
