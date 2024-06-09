@@ -1,0 +1,1409 @@
+@font-face {
+    font-family: start2P;
+    src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: atkinson;
+    src: url(../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.ttf);
+}
+
+img { /*makes pixel art img (all imgs) be crisp*/
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+/*/////////////////Light Box/////////////////*/
+#lbBack{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 200;
+
+    width: 100vw;
+    height: 100vh;
+
+    background :rgba(255, 255, 255, 0.312);
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+#lbBox{
+    width: 95%;
+    height: 400px;
+
+    background-color:#BEBFA8;
+
+    border :#6f7959 8px solid;
+    position :relative;
+
+}
+
+#lbCloseButton{
+    position: absolute;
+    top : 15px;
+    right: 15px;
+    cursor:pointer;
+    
+}
+#lbCloseButton img{
+    width: 40px;
+    height: 40px;
+}
+
+#lbText{
+    font-family: start2P;
+    padding:30px;
+    color:#1D3024;
+}
+#lbText h1{
+    padding-bottom: 20px;
+    font-size: 23px;
+}
+#lbText p{
+    font-size: 20px;
+}
+
+/*/////////////////HEADER/////////////////*/
+#pixelBG{
+    background : url(../images/pixelBG2.png) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width:100vw;
+    -webkit-background-size : cover;
+    -moz-background-size : cover;
+    -o-background-size : cover;
+    background-size: cover;
+    
+}
+
+#headerBack{
+    height: 10vw;
+    background-color: #BEBFA8;
+    display: flex;
+    align-items: center;
+}
+#headerMain{
+    width: 100vw;
+    background-color: #94A177;
+    height: 8vw;
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+    font-size:5vw;
+    font-family: start2P;
+    color:#1D3024;
+}
+#PSI{
+    color:#F00060;
+
+}
+
+#title a:link{
+    text-decoration: none;
+    color:#1D3024;
+}
+#title a:visited{
+    text-decoration: none;
+    color:#1D3024;
+}
+
+/*/////////////////HERO/////////////////*/
+#heroBG{
+    height:640px;
+    width:100vw;
+    background-color: rgba(42, 140, 76,.95);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#heroMain{
+    height:520px;
+    width:100vw;
+    background-color: #1BBF54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+
+.icon{
+    width: 36px;
+    height:auto;
+}
+
+#firstIcons{
+    display:flex;
+    flex-direction: row;  
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secondIcons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;   
+    align-items: center;
+
+}
+
+#butter1{
+    position:absolute;
+    width:40px;
+    height:auto;
+    right:8px;
+    top:160px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#butter2{
+    position:absolute;
+    width:32px;
+    left:180px;
+    top:8px;
+}
+#gift{
+    position:absolute;
+    width:48px;
+    height:auto;
+    top: 12px;
+    right:20px;
+}
+#quote{
+    margin-top: 40px;
+    font-size: 24px;
+    color:#1D3024;
+    font-family: start2P;
+    width:360px;
+    height:128px;
+}
+
+#quote span{
+    font-size:28px;
+}
+
+#tree3{
+    width:304px;
+    height:auto;
+    margin-top: 0;
+    position: absolute;
+    bottom: 28px;
+
+}
+#tree4{
+    width: 98vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+#heroButtons{
+    margin-top: 20px;
+    margin-bottom: 8px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstRowButtons{
+    width: 125px;
+    display:flex;
+    flex-direction: row;
+    font-size: 28px;
+    font-family: start2P;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+#secondRowButtons{
+    width: 125px;
+    margin-top: 2.8px;
+    display:flex;
+    flex-direction: row;
+    font-size: 28px;
+    font-family: start2P;
+    justify-content: center;
+}
+
+.buttonContainer{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.buttonText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-shadow: 0px 0px 1.39px rgba(0, 0, 0, 0.5);
+}
+#Poo{
+    left: 55%;
+}
+#Jeff{
+    left: 55%;
+}
+
+.buttonContainer a img{
+    width:140px;
+    height:70px;
+}
+
+#jeffButton{
+    margin-left: 20px;
+}
+#pooButton{
+    margin-left: 20px;
+}
+#paulaHeroIcon{
+    margin-left: 100px;
+}
+#pooHeroIcon{
+    margin-left: 100px;
+}
+#nessLink:link{
+    color:#6C6BE3;
+}
+
+#paulaLink:link{
+    color:#FFADF4;
+}
+
+#jeffLink:link{
+    color:#1BBF54;
+}
+#pooLink:link{
+    color:#E7E7E7;
+}
+
+.buttonContainer:hover .buttonText{
+    color: white;
+}
+.buttonText:hover{
+    color: white;
+}
+
+#nessLink:visited {
+    color:#6C6BE3;
+}
+#paulaLink:visited {
+    color:#FFADF4;;
+}
+#jeffLink:visited {
+    color:#1BBF54;
+}
+#pooLink:visited {
+    color:#E7E7E7;
+}
+/*////////////////Transition//////////////////*/
+#transBack{
+    height:640px;
+    background-color: #BEBFA8;
+    display:block;
+    display:flex;
+    align-items: center;
+}
+
+#transBack #transMain{
+    width: 100vw;
+    height:600px;
+    background-color: #94A177;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#menuScrn{
+    margin-top: 20px;
+    width:380px;
+    height: 320px;
+    background-color: #6f7959;
+
+    border-radius: 2%;
+    padding-top: 24px;
+    text-align:center;
+}
+
+#menuScrn #menuWords
+{
+    font-family: start2P;
+    font-size: 28px;
+    line-height: 48px;
+    
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+#transButton{
+    margin-top: 12px;
+    position: relative;
+    text-align: center;
+    color:#BEBFA8;
+}
+
+#yes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: start2P;
+    font-size: 20px;
+
+}
+
+#charArchiveBanner{
+    display:flex;
+    flex-direction: column;
+    font-family: start2P;
+    font-size: 20px;  
+    margin-top: 20px;
+    color: #1D3024;
+    align-items: center;
+    justify-content: center;
+}
+
+#transButton a img{
+    width:180px;
+    height:90px;
+}
+
+#charArchiveBanner img{
+    width:56px;
+    height:56px;
+    position:absolute
+
+}
+#charArchiveBanner div{
+    position:absolute;
+    bottom: 90px;
+}  
+#down1{
+    bottom: 25px;
+    left: 100px;
+}
+#down2{
+    bottom:25px;
+    right: 100px;
+}
+#transButton a:link{
+    color:#BEBFA8;
+}
+#transButton a:visited{
+    color:#BEBFA8;
+}
+#transButton a:hover{
+    color:white;
+}
+
+/*////////////////Ness//////////////////*/
+#nessBack{
+    background-color: rgba(108, 107, 227,0.9);
+    height:2000px;
+    display:flex;
+    align-items: center;  
+    flex-direction: row;
+}
+
+#nessMain{
+    background-color: rgba(150, 0, 60, .74);
+    height:1800px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    position:relative;
+}
+
+#nessNameTag{
+    position:absolute;
+    
+    top: -80px;
+    left:108px;
+    width: 176px; 
+    height: 60px;
+    display: flex;
+    border-radius: 2%;
+    background-color: #F00060;
+}
+
+#nessNameTag div{
+    font-family: start2P;
+    font-size: 36px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 1.39px rgba(0, 0, 0, 0.5);
+}
+
+
+#nessText1{
+    position:absolute;
+    top: 280px;
+    margin-top: 20px;
+    font-family: atkinson;
+    font-size: 16px;
+    color: white;
+    width: 340px;
+    height:460px;
+    margin-left: 28px;
+}
+
+#phone{
+    position:absolute;
+    width:68px;
+    height:auto;
+    top:-76px;
+    right: 20px;
+}   
+
+#nessIMG{
+    position:absolute;
+    top: 20px;
+
+    width: 160px;
+    height:200px;
+    border-style: solid;
+    border-color:  white;
+    border-width: 16px;
+    background-color:#6C6BE3;
+    margin-left: 104px;
+    margin-top: 16px;
+    border-radius: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nessMap{
+    position:absolute;
+    top: 780px;
+
+    margin-top: 68px;
+    margin-left: 24px;
+    width: 320px;
+    height: auto;
+    border-style: solid;
+    border-color:  white;
+    border-width: 16px;
+    background-color: #F00060;
+    border-radius: 2%;
+}
+
+#nessText2{
+    position:absolute;
+    top: 1180px;
+
+    margin-top: 20px;
+    font-family: atkinson;
+    font-size: 16px;
+    color: white;
+    width: 340px;
+    height:460px;
+    margin-left: 28px;
+}
+
+#nessBottomIcon{
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nessBottomIcon img{
+    position:absolute;
+    width:320px;
+    height: auto;
+    top: 1680px;
+}
+
+#nessArch{
+    position:absolute;
+    width: 144px;
+    height:auto;
+}
+
+#nessHeyDiv, #paulaHeyDiv,#jeffHeyDiv, #pooHeyDiv{
+    position : absolute;
+    top : -70px;
+    right: -20px;
+    display:none;
+}
+
+#nessHeyDiv p, #paulaHeyDiv p,#jeffHeyDiv p, #pooHeyDiv p {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -170%);
+    font-family: start2P;
+    font-size:25px;
+}
+
+#nesshey, #paulahey, #jeffhey, #poohey{
+    width: 180px;
+    height: 90px;
+}
+
+
+/*////////////////paula//////////////////*/
+#paulaBack{
+    background-color: rgba(255, 173, 244,0.9);
+    height:2000px;
+    display:flex;
+    align-items: center;  
+    flex-direction: row;
+}
+
+#paulaMain{
+    background-color: rgba(231, 0, 82, .53);
+    height:1800px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    position:relative;
+}
+
+#paulaNameTag{
+    position:absolute;
+   
+    top: -80px;
+    left:96px;
+    width: 212px;
+    height: 60px;
+    display: flex;
+    border-radius: 2%;
+    background-color: #F00060;
+}
+
+#paulaNameTag div{
+    font-family: start2P;
+    font-size: 36px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 1.39px rgba(0, 0, 0, 0.5);
+}
+
+#paulaText1{
+    position:absolute;
+    top: 280px;
+    margin-top: 20px;
+    font-family: atkinson;
+    font-size: 16px;
+    color: white;
+    width: 340px;
+    height:460px;
+    margin-left: 28px;
+}
+
+#teddy{
+    position:absolute;
+    width:52px;
+    height:auto;
+    top:-76px;
+    right: 20px;
+}  
+
+#paulaIMG{
+    position:absolute;
+    top: 20px;
+
+    width: 160px;
+    height:200px;
+    border-style: solid;
+    border-color:  white;
+    border-width: 16px;
+    background-color:rgb(255, 173, 244);
+    margin-left: 104px;
+    margin-top: 16px;
+    border-radius: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#paulaMap{
+    position:absolute;
+    top: 865px;
+
+    margin-top: 68px;
+    margin-left: 24px;
+    width: 320px;
+    height: auto;
+    border-style: solid;
+    border-color:  white;
+    border-width: 16px;
+    background-color: #F00060;
+    border-radius: 2%;
+}
+
+#paulaText2{
+    position:absolute;
+    top: 1245px;
+
+    margin-top: 20px;
+    font-family: atkinson;
+    font-size: 16px;
+    color: white;
+    width: 340px;
+    height:460px;
+    margin-left: 28px;
+}
+
+#paulaBottomIcon{
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#PKfire{
+    position:absolute;
+    width:60px;
+    height: auto;
+    top: 1680px;
+    left: 52px;
+}
+#PKthunder{
+    position:absolute;
+    width:60px;
+    height: auto;
+    top:1650px;
+}
+#PKfreeze{
+    position:absolute;
+    width:80px;
+    height: auto;
+    top:1660px;
+    right: 40px;
+}
+
+#paulaArch{
+    width: 144px;
+    height:auto;
+}
+
+
+
+/* ////////////////jeff//////////////////*/
+#jeffBack{
+    background-color: rgba(231, 214, 33,0.9);
+    height:2000px;
+    display:flex;
+    align-items: center;  
+    flex-direction: row;
+}
+
+#jeffMain{
+    background-color: rgba(60, 88, 74, 0.935);
+    height:1800px;
+    width:100vw;
+    position:relative;
+}
+
+#jeffNameTag{
+    position:absolute;
+   
+    top: -80px;
+    left:108px;
+    width: 176px;
+    height: 60px;
+    display: flex;
+    border-radius: 2%;
+    background-color: #8B6F4E;
+}
+
+#jeffNameTag div{
+    font-family: start2P;
+    font-size: 36px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 1.39px rgba(0, 0, 0, 0.5);
+}
+
+#jeffText1{
+    position:absolute;
+    top: 280px;
+    margin-top: 20px;
+    font-family: atkinson;
+    font-size: 16px;
+    color: white;
+    width: 340px;
+    height:460px;
+    margin-left: 28px;
+}
+
+#monkey{
+    position:absolute;
+    width:40px;
+    height:auto;
+    top:-76px;
+    right: 20px;
+}  
+
+#jeffIMG{
+    position:absolute;
+    top: 20px;
+
+    width: 160px;
+    height:200px;
+    border-style: solid;
+    border-color:  white;
+    border-width: 16px;
+    background-color:#E7D621;
+    margin-left: 104px;
+    margin-top: 16px;
+    border-radius: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jeffMap{
+    position:absolute;
+    top: 875px;
+
+    margin-top: 68px;
+    margin-left: 24px;
+    width: 320px;
+    height: auto;
+    border-style: solid;
+    border-color:  white;
+    border-width: 16px;
+    background-color: #F00060;
+    border-radius: 2%;
+}
+
+#jeffText2{
+    position:absolute;
+    top: 1250px;
+
+    margin-top: 20px;
+    font-family: atkinson;
+    font-size: 16px;
+    color: white;
+    width: 340px;
+    height:460px;
+    margin-left: 28px;
+}
+
+#jeffBottomIcon img{
+    position:absolute;
+    top:1600px;
+    
+    left: 40px;
+    width: 60px;
+    height:auto;
+}
+#andonutsBox{
+    position:absolute;
+    top:1595px;
+    left:100px;
+    width:248px;
+    height: 116px;
+    display: flex;
+    border-radius: 2%;
+    background-color: #8B6F4E;
+    margin-left: 12px;
+}
+#andonutsBox p{
+    margin-top: 12px;
+    margin-left: 12px;
+    font-family: atkinson;
+    color:white;
+    font-size: 18px;
+    width:240px;
+
+}
+#jeffArch{
+    width: 144px;
+    height:auto;
+}
+
+
+/* ////////////////poo//////////////////*/
+#pooBack{
+    background-color: rgba(231, 231, 231,0.9);
+    height:2000px;
+    display:flex;
+    align-items: center;  
+    flex-direction: row;
+}
+
+#pooMain{
+    background-color: rgba(51, 34, 34, 0.7);
+    height:1800px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+#pooNameTag{
+    position:absolute;
+   
+    top: -80px;
+    left:108px;
+    width: 176px;
+    height: 60px;
+    display: flex;
+    border-radius: 2%;
+    background-color: #332222;
+}
+
+#pooNameTag div{
+    font-family: start2P;
+    font-size: 36px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 1.39px rgba(0, 0, 0, 0.5);
+}
+
+#pooText1{
+    position:absolute;
+    top: 280px;
+    margin-top: 20px;
+    font-family: atkinson;
+    font-size: 16px;
+    color: white;
+    width: 340px;
+    height:460px;
+    margin-left: 28px;
+}
+
+#statue{
+    position:absolute;
+    width:68px;
+    height:auto;
+    top:-76px;
+    right: 20px;
+}  
+
+#pooIMG{
+    position:absolute;
+    top:  20px;
+
+    width: 160px;
+    height:200px;
+    border-style: solid;
+    border-color:  white;
+    border-width: 16px;
+    background-color:rgb(231, 231, 231);
+    margin-left: 104px;
+    margin-top: 16px;
+    border-radius: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pooMap{
+    position:absolute;
+    top: 800px;
+
+    margin-top: 68px;
+    margin-left: 24px;
+    width: 320px;
+    height: auto;
+    border-style: solid;
+    border-color:  white;
+    border-width: 16px;
+    background-color: #F00060;
+    border-radius: 2%;
+}
+
+#pooText2{
+    position:absolute;
+    top: 1100px;
+
+    margin-top: 20px;
+    font-family: atkinson;
+    font-size: 16px;
+    color: white;
+    width: 340px;
+    height:460px;
+    margin-left: 28px;
+}
+
+#pooBottomIcon{
+    width:100vw;
+}
+
+#pooBottomIcon img{
+    position:absolute;
+    width:92px;
+    height: auto;
+    top: 1545px;
+    left:156px;
+}
+
+#pooArch{
+    width: 144px;
+    height:auto;
+}
+
+
+/*////////////////footers//////////////////*/
+#footerBack{
+    height:200vw;
+    background-color: #BEBFA8;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footerMain{
+    width:100vw;
+    height:185vw;
+    background-color: #94A177;
+    display:flex;
+    position: relative;
+}
+
+#legalText{
+    position:absolute;
+    top: 150vw;
+    font-family: start2P;
+    font-size: 3.7vw;
+    margin-left: 10vw;
+    width:85vw;
+    height:15vw;
+    color:#1D3024;
+    margin-top: 0vw;
+}
+#learnMore{
+    position:absolute;
+    top:115vw;
+
+
+    color:#1D3024;
+    font-family: start2P;
+    font-size: 7vw;
+    margin-top: 0vw;
+    margin-left: 10vw;
+
+    display:flex;
+    flex-direction: column;
+}
+
+#learnIcons img{
+    margin-top: 1vw;
+    margin-left: 10vw;
+    width:20vw;
+    height:auto;
+    text-decoration: none;
+}
+
+#siteLinks{
+    margin-left: 15vw;
+    margin-top: 5vw;
+    color:#1D3024;
+    font-family: start2P;
+    font-size: 7vw;
+    margin-bottom: 10vw;
+}
+#links{
+    margin-left:12vw;
+}
+nav ul{
+    margin-left:15vw;
+    font-size: 7vw;
+    font-family: start2P;
+    list-style: none;
+    padding : 0px;
+    margin : 0px;
+    margin-top: 1vw;
+    text-align: center;
+    line-height: 13vw;
+}
+
+nav ul a:link{
+    text-decoration: none;
+    color: #545353;
+}
+
+nav ul a:visited{
+    text-decoration: none;
+    color: #545353;
+}
+
+nav ul a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/*/////////toTop/////////////*/
+#toTop img{
+    width: 32px;
+    height: 48px;
+}
+
+#toTop {
+    width: 16px;
+    height: 16px;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 48px 24px;
+    border-radius: 10%;
+}
+
+/*//////////////////PSI//////////////////////*/
+#PSIbackNess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(78, 85, 117);
+}
+#PSIbackPaula{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(117, 78, 114);;
+}
+#PSIbackJeff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(107, 117, 78);;
+}
+#PSIbackPoo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(67, 70, 87);
+}
+
+.PSIback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3c3e39;
+}
+#descriptionNess,#descriptionPaula,#descriptionJeff,#descriptionPoo{
+    margin-top:32px;
+    font-family: start2P;
+    font-size:18px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+#descriptionNess{
+    color:#c6c6df;
+}
+#descriptionPaula{
+    color:#FFADF4;
+}
+#descriptionJeff{
+    color:#1BBF54;
+}
+#descriptionPoo{
+    color:#c6c6df;
+}
+
+#jeffPSIbox{
+    text-align: center;
+    height:300px;
+    margin-top:32px;
+    font-family: start2P;
+    font-size:18px;
+    color:white;
+}
+.titles{
+    text-align: center;
+    margin-top:32px;
+    font-family: start2P;
+    font-size:px;
+    color:white;
+}
+
+.PSIback table{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border:solid;
+    width: 90%
+}
+
+.PSIback table{
+    background-color: #1D3024;
+}
+
+.PSIback th,td{
+    border:solid 2px black;
+    background-color: #94A177;
+    font-size: 14px;
+    font-family:atkinson;
+    
+}
+.PSIback th{
+    background-color: #6f7959;
+    color:white;
+}
+
+/*///////////////ABOUT/////////////////*/
+#aboutBack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3c3e39;
+}
+
+#aboutTag{
+    margin-top:38.4px;
+    width:175px;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #1D3024;
+    border: solid;
+    border-width: 8.96px;
+    border-color: #94A177;
+    border-radius: 2%;
+}
+#aboutTagText{
+    font-family: start2P;
+    font-size: 25px;
+    color:white;
+}
+
+/*///////////////NessAbout/////////////*/
+#nessAbout{
+    margin-top: 89.6px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#nessTalkIMG{
+    width:102.4px;
+    height:auto;
+    margin-left: 10px;
+}
+#nessDialog{
+    margin-left: 15px;
+}
+#nessDialogBox{
+    position:relative;
+    margin-top:38.4px;
+    width:832px;
+    height:auto;
+    display:flex;
+    align-items: center;
+    background-color: #1D3024;
+    border: solid;
+    border-width: 8.96px;
+    border-color: #94A177;
+    border-radius: 2%;
+}
+#nessDialogText{
+    margin-left: 8px;
+    font-family: start2P;
+    font-size: 14px;
+    color:white;
+    line-height: 24.32px;
+}
+#nessDialogTag{
+    position:absolute;
+    top: -51.2px;
+    width:128px;
+    height: 51.2px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #94A177;
+}
+#nessDialogTag div{
+    margin-left: 12.8px;
+    font-size: 25.6px;
+    font-family: start2P;
+    color: #1D3024;
+}
+
+/*///////////////paulaAbout/////////////*/
+#paulaAbout{
+    margin-top: 89.6px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#paulaTalkIMG{
+    width:102.4px;
+    height:auto;
+    margin-left: 10px;
+}
+#paulaDialog{
+    margin-left: 15px;
+}
+#paulaDialogBox{
+    margin-top:38.4px;
+    width:832px;
+    height:auto;
+    display:flex;
+    align-items: center;
+    background-color: #1D3024;
+    border: solid;
+    border-width: 8.96px;
+    border-color: #94A177;
+    border-radius: 2%;
+    position:relative;
+}
+#paulaDialogText{
+    margin-left: 12.8px;
+    font-family: start2P;
+    font-size: 14px;
+    color:white;
+    line-height: 24.32px;
+}
+#paulaDialogTag{
+    position:absolute;
+    top: -51.2px;
+    width:153.6px;
+    height: 51.2px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #94A177;
+}
+#paulaDialogTag div{
+    margin-left: 12.8px;
+    font-size: 25.6px;
+    font-family: start2P;
+    color: #1D3024;
+}
+
+/*///////////////jeffAbout/////////////*/
+#jeffAbout{
+    margin-top: 89.6px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#jeffTalkIMG{
+    width:102.4px;
+    height:auto;
+    margin-left: 10px;
+}
+#jeffDialog{
+    margin-left: 15px;
+}
+#jeffDialogBox{
+    position: relative;
+    margin-top:38.4px;
+    width:832px;
+    height:auto;
+    display:flex;
+    align-items: center;
+    background-color: #1D3024;
+    border: solid;
+    border-width: 8.96px;
+    border-color: #94A177;
+    border-radius: 2%;
+}
+#jeffDialogText{
+    margin-left: 12.8px;
+    font-family: start2P;
+    font-size: 14px;
+    color:white;
+    line-height: 24.32px;
+}
+#jeffDialogTag{
+    position:absolute;
+    top: -51.2px;
+    width:128px;
+    height: 51.2px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #94A177;
+}
+#jeffDialogTag div{
+    margin-left: 12.8px;
+    font-size: 25.6px;
+    font-family: start2P;
+    color: #1D3024;
+}
+
+/*///////////////pooAbout/////////////*/
+#pooAbout{
+    margin-top: 89.6px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#pooTalkIMG{
+    width:102.4px;
+    height:auto;
+    margin-left: 10px;
+}
+#pooDialog{
+    margin-left: 15px;
+}
+#pooDialogBox{
+    position:relative;
+    margin-top:38.4px;
+    width:832px;
+    height:auto;
+    display:flex;
+    align-items: center;
+    background-color: #1D3024;
+    border: solid;
+    border-width: 8.96px;
+    border-color: #94A177;
+    border-radius: 2%;
+    margin-bottom: 64px;
+}
+#pooDialogText{
+    margin-left: 12.8px;
+    font-family: start2P;
+    font-size: 14px;
+    color:white;
+    line-height: 24.32px;
+}
+#pooDialogTag{
+    position:absolute;
+    top: -51.2px;
+    width:102.4px;
+    height: 51.2px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #94A177;
+}
+#pooDialogTag div{
+    margin-left: 12.8px;
+    font-size: 25.6px;
+    font-family: start2P;
+    color: #1D3024;
+}
+
+#nessDialogBox, #paulaDialogBox, #jeffDialogBox, #pooDialogBox{
+    width: 90%;
+}

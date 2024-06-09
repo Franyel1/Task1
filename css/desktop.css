@@ -1,0 +1,1369 @@
+@font-face {
+    font-family: start2P;
+    src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: atkinson;
+    src: url(../fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.ttf);
+}
+
+img { /*makes pixel art img (all imgs) be crisp*/
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+/*/////////////////Light Box/////////////////*/
+#lbBack{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 200;
+
+    width: 100vw;
+    height: 100vh;
+
+    background :rgba(255, 255, 255, 0.312);
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+#lbBox{
+    width: 600px;
+    height: 300px;
+
+    background-color:#BEBFA8;
+
+    border :#6f7959 8px solid;
+    position :relative;
+
+}
+
+#lbCloseButton{
+    position: absolute;
+    top : 15px;
+    right: 15px;
+    cursor:pointer;
+    
+}
+#lbCloseButton img{
+    width: 40px;
+    height: 40px;
+}
+
+#lbText{
+    font-family: start2P;
+    padding:30px;
+    color:#1D3024;
+}
+#lbText h1{
+    padding-bottom: 20px;
+}
+#lbText p{
+    font-size: 20px;
+}
+
+/*////////////////HEADER/////////////////*/
+
+#headerBack{
+    height: 10vw;
+    background-color: #BEBFA8;
+    display: flex;
+    align-items: center;
+}
+
+#headerMain{
+    width: 100vw;
+    background-color: #94A177;
+    height: 8vw;
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+    font-size:4vw;
+    font-family: start2P;
+    color:#1D3024;
+}
+#PSI{
+    color:#F00060;
+
+}
+#title a:link{
+    text-decoration: none;
+    color:#1D3024;
+}
+#title a:visited{
+    text-decoration: none;
+    color:#1D3024;
+}
+/*/////////////////HERO/////////////////*/
+#heroBG{
+    height:1000px;
+    background-color: rgba(42, 140, 76,.95);
+    display:flex;
+    justify-content: center;
+}
+#pixelBG{
+    background : url(../images/pixelBG2.png) no-repeat center center fixed;
+    -webkit-background-size : cover;
+    -moz-background-size : cover;
+    -o-background-size : cover;
+    background-size: cover;
+}
+
+.icon{
+    width: 5vw;
+    height:auto;
+}
+
+#firstIcons{
+    display:flex;
+    flex-direction: column;  
+    justify-content: space-around;
+    margin-right: 20px;
+
+}
+
+#secondIcons{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    
+}
+
+#heroMain{
+    width:896px;
+    height:1000px;
+    background-color: #1BBF54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+#butter1{
+    position:absolute;
+    width:6vw;
+    height:auto;
+    right:8vw;
+    top:32vw;
+}
+#butter2{
+    position:absolute;
+    width:6vw;
+    left:19.2px;
+    top:25.6px;
+}
+#gift{
+    position:absolute;
+    width:7vw;
+    height:auto;
+    top: 5vw;
+    right:5vw;
+}
+
+#quote{
+    margin-top: 64px;
+    font-size: 46px;
+    color:#1D3024;
+    font-family: start2P;
+    width:660.48px;
+    height:281.6px;
+}
+
+#quote span{
+    font-size:51.2px;
+}
+
+#tree3{
+    width:768px;
+    height:auto;
+    margin-top: 0;
+    position: absolute;
+    bottom: 89px;
+
+}
+#tree4{
+    width:925px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+#heroButtons{
+    margin-bottom: 25.6px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstRowButtons{
+    width: 400px;
+    display:flex;
+    flex-direction: row;
+    font-size: 89.6px;
+    font-family: start2P;
+    justify-content: center;
+}
+#secondRowButtons{
+    width: 400px;
+    margin-top: 8.95px;
+    display:flex;
+    flex-direction: row;
+    font-size: 89.6px;
+    font-family: start2P;
+    justify-content: center;
+
+}
+
+.buttonContainer{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-left: 12.8px;
+}
+
+.buttonText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25.6px;
+    text-shadow: 0px 0px 4.44px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#paulaHeroIcon{
+    margin-bottom: 256px;
+}
+#pooHeroIcon{
+    margin-bottom: 256px;
+}
+#nessLink{
+    cursor:pointer;
+    color:#6C6BE3;
+}
+
+#paulaLink{
+    cursor:pointer;
+    color:#FFADF4;
+}
+
+#jeffLink{
+    cursor:pointer;
+    color:#1BBF54;
+}
+#pooLink{
+    cursor:pointer;
+    color:#E7E7E7;
+}
+
+.buttonContainer:hover .buttonText{
+    color: white;
+}
+.buttonText:hover{
+    color: white;
+}
+
+#nessLink:visited {
+    color:#6C6BE3;
+}
+#paulaLink:visited {
+    color:#FFADF4;;
+}
+#jeffLink:visited {
+    color:#1BBF54;
+}
+#pooLink:visited {
+    color:#E7E7E7;
+}
+.buttonContainer a img{
+    width:192px;
+    height:96px;
+}
+
+
+
+
+
+/*////////////////Transition//////////////////*/
+#transBack{
+    height:1088px;
+    background-color: #BEBFA8;
+    display:block;
+    display:flex;
+    align-items: center;
+
+}
+
+#transBack #transMain{
+    height:1024px;
+    width: 100vw;
+    background-color: #94A177;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#menuScrn{
+    margin-top: 64px;
+    width:920px;
+    height: 640px;
+    background-color: #6f7959;
+
+    border-radius: 2%;
+    padding-top: 76.8px;
+    text-align:center;
+}
+
+#menuScrn #menuWords
+{
+    font-family: start2P;
+    font-size: 51.2px;
+    line-height: 102.4px;
+    
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+#transButton{
+    margin-top: 38.4px;
+    position: relative;
+    text-align: center;
+    color:#BEBFA8;
+}
+
+#yes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: start2P;
+    font-size:38.4px;
+
+}
+
+#charArchiveBanner{
+    display:flex;
+    flex-direction: row;
+    font-family: start2P;
+    font-size: 38.4px;  
+    margin-top: 64px;
+    color: #1D3024;
+    align-items: center;
+    justify-content: center;
+}
+
+#transButton a img{
+    width:256px;
+    height:128px;
+}
+
+#charArchiveBanner img{
+    width:102.4px;
+    height:102.4px;
+}
+#transButton a:link{
+    color:#BEBFA8;
+}
+#transButton a:visited{
+    color:#BEBFA8;
+}
+#transButton a:hover{
+    color:white;
+}
+
+
+
+/*////////////////Ness//////////////////*/
+#nessBack{
+    background-color: rgba(108, 107, 227,0.9);
+    height:1536px;
+    display:flex;
+    justify-content: center;  
+}
+
+#nessMain{
+
+    background-color: rgba(150, 0, 60, .74);
+    width:896px;
+    height:1536px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+
+#nessCol1
+{
+    flex-direction: column;
+    display: flex;
+}
+
+#nessCol2
+{
+    flex-direction: column;
+    display: flex;
+}
+
+#nessNameTag{
+    margin-left: 89.6px; 
+    margin-top: 51.2px;
+    width: 256px; 
+    height: 83.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+    background-color: #F00060;
+}
+
+#nessNameTag div{
+    font-family: start2P;
+    font-size: 51.2px;
+    color:white;
+}
+
+
+#nessText1{
+    margin-top: 64px;
+    font-family: atkinson;
+    font-size: 16.64px;
+    color: white;
+    width: 345.6px;
+    height:358.4px;
+    margin-left: 89.6px;
+}
+
+#phone{
+    width:217.6px;
+    height:auto;
+    margin-top: 52.704px;
+    margin-left:128px;
+}   
+
+
+
+#nessIMG{
+    width: 256px;
+    height:320px;
+    border-style: solid;
+    border-color:  white;
+    border-width: 12.8px;
+    background-color:#6C6BE3;
+    margin-left: 76.8px;
+    margin-top: 51.2px;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+#nessMap{
+    margin-top: 217.6px;
+    margin-left: 76.8px;
+    width: 345.6px;
+    height: auto;
+    border-style: solid;
+    border-color:  white;
+    border-width: 12.8px;
+    background-color: #F00060;
+    border-radius: 2%;
+}
+
+#nessText2{
+    margin-top: 57.6px;
+    font-family: atkinson;
+    font-size: 16.64px;
+    color: white;
+    width: 294.4px;
+    height:358.4px;
+    margin-left: 76.8px;
+}
+
+#nessBottomIcon{
+    width:896px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nessBottomIcon img{
+    width: 576px;
+    height: auto;
+}
+
+#nessArch{
+    position:absolute;
+    width: 230.4px;
+    height:auto;
+}
+
+#nessHeyDiv, #paulaHeyDiv,#jeffHeyDiv, #pooHeyDiv{
+    position : absolute;
+    top : -70px;
+    right: -20px;
+    display:none;
+}
+
+#nessHeyDiv p, #paulaHeyDiv p,#jeffHeyDiv p, #pooHeyDiv p {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -170%);
+    font-family: start2P;
+    font-size:25px;
+}
+
+#nesshey, #paulahey, #jeffhey, #poohey{
+    width: 180px;
+    height: 90px;
+}
+
+/*////////////////Paula//////////////////*/
+#paulaBack{
+    background-color: rgba(255, 173, 244,0.9);
+    height:1536px;
+    display:flex;
+    justify-content: center;
+    
+}
+
+#paulaMain{
+    background-color: rgba(231, 0, 82, .53);
+    width:896px;
+    height:1536px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#paulaCol1
+{
+    flex-direction: column;
+    display: flex;
+}
+
+#paulaCol2
+{
+    flex-direction: column;
+    display: flex;
+}
+
+#paulaNameTag{
+    margin-left: 89.6px;
+    margin-top: 51.2px;
+    width: 294.4px;
+    height: 83.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+    background-color: #F00060;
+}
+
+#paulaNameTag div{
+    font-family: start2P;
+    font-size: 51.2px;
+    color:white;
+    
+}
+
+#paulaText1{
+    margin-top: 64px;
+    font-family: atkinson;
+    font-size: 16.64px;
+    color: white;
+    width: 345.6px;
+    height:auto;
+    margin-left: 89.6px;
+}
+
+#teddy{
+    width:217.6px;
+    height:auto;
+    margin-top: 52.704px;
+    margin-left:128px;
+}   
+
+#paulaIMG{
+    width: 256px;
+    height: 320px;
+    border-style: solid;
+    border-color:  white;
+    border-width: 12.8px;
+    background-color: rgb(255, 173, 244);
+    margin-left: 76.8px;
+    margin-top: 51.2px;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+#paulaMap{
+    margin-top: 10px;
+    margin-left: 76.8px;
+    width: 345.6px;
+    height: auto;
+    border-style: solid;
+    border-color:  white;
+    border-width: 12.8px;
+    background-color: #F00060;
+    border-radius: 2%;
+}
+
+#paulaText2{
+    margin-top: 57.6px;
+    font-family: atkinson;
+    font-size: 16.64px;
+    color: white;
+    width: 294.4px;
+    height:358.4px;
+    margin-left: 76.8px;
+}
+
+#paulaBottomIcon{
+    width:896px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+#paulaArch{
+    position:absolute;
+    width:217.6px;
+    height:auto;
+}
+
+#PKfire{
+    width:128px;
+    height:auto;
+}
+#PKthunder{
+    width:128px;
+    height:auto;
+}
+#PKfreeze{
+    width:192px;
+    height:auto;
+}
+
+/*////////////////jeff//////////////////*/
+#jeffBack{
+    background-color: rgba(231, 214, 33,0.9);
+    height:1536px;
+    display:flex;
+    justify-content: center;
+    
+}
+
+#jeffMain{
+    background-color: rgba(60, 88, 74, 0.935);
+    width:896px;
+    height:1536px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#jeffCol1
+{
+    flex-direction: column;
+    display: flex;
+}
+
+#jeffCol2
+{
+    flex-direction: column;
+    display: flex;
+}
+
+#jeffNameTag{
+    margin-left: 89.6px;
+    margin-top: 51.2px;
+    width: 256px;
+    height: 83.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+    background-color: #8B6F4E;
+}
+
+#jeffNameTag div{
+    font-family: start2P;
+    font-size: 51.2px;
+    color:white;
+    
+}
+
+#jeffText1{
+    margin-top: 64px;
+    font-family: atkinson;
+    font-size: 16.64px;
+    color: white;
+    width: 345.6px;
+    height:auto;
+    margin-left: 89.6px;
+}
+
+#monkey{
+    width:217.6px;
+    height:auto;
+    margin-top: 52.704px;
+    margin-left:128px;
+}   
+
+#jeffIMG{
+    width: 256px;
+    height: 320px;
+    border-style: solid;
+    border-color:  white;
+    border-width: 12.8px;
+    background-color: #E7D621;
+    margin-left: 76.8px;
+    margin-top: 51.2px;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+#jeffMap{
+    margin-top: 10px;
+    margin-left: 76.8px;
+    width: 345.6px;
+    height: auto;
+    border-style: solid;
+    border-color:  white;
+    border-width: 12.8px;
+    background-color: #F00060;
+    border-radius: 2%;
+}
+
+#jeffText2{
+    margin-top: 57.6px;
+    font-family: atkinson;
+    font-size: 16.64px;
+    color: white;
+    width:294.4px;
+    height:192px;
+    margin-left: 76.8px;
+}
+
+#jeffBottomIcon{
+    width:896px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#andonutsBox{
+    width:384px;
+    height: 89.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+    background-color: #8B6F4E;
+    margin-left: 38.4px;
+}
+#andonutsBox p{
+    margin-left:12.8px;
+    font-family: atkinson;
+    color:white;
+    font-size: 16.64px;
+
+}
+
+#jeffArch{
+    width:217.6px;
+    height:auto;
+    position:absolute;
+}
+
+#jeffBottomIcon img{
+    width: 128px;
+    height:auto;
+}
+
+/*////////////////Poo//////////////////*/
+#pooBack{
+    background-color: rgba(231, 231, 231,0.9);
+    height:1536px;
+    display:flex;
+    justify-content: center;
+    
+}
+
+#pooMain{
+    background-color: rgba(51, 34, 34, 0.7);
+    width:896px;
+    height:1536px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#pooCol1
+{
+    flex-direction: column;
+    display: flex;
+}
+
+#pooCol2
+{
+    flex-direction: column;
+    display: flex;
+}
+
+#pooNameTag{
+    margin-left: 89.6px;
+    margin-top: 51.2px;
+    width: 256px;
+    height: 83.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+    background-color: #332222;
+}
+
+#pooNameTag div{
+    font-family: start2P;
+    font-size: 51.2px;
+    color:white;
+    
+}
+
+#pooText1{
+    margin-top: 64px;
+    font-family: atkinson;
+    font-size: 16.64px;
+    color: white;
+    width:345.6px;
+    height:550.4px;
+    margin-left: 76.8px;
+}
+
+#statue{
+    width:166.4px;
+    height:auto;
+    margin-top: 52.704px;
+    margin-left:128px;
+}   
+
+#pooIMG{
+    width: 256px;
+    height: 320px;
+    border-style: solid;
+    border-color:  white;
+    border-width: 12.8px;
+    background-color: rgb(231, 231, 231);
+    margin-left: 76.8px;
+    margin-top: 51.2px;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+#pooMap{
+    margin-top: 217.6px;
+    margin-left: 76.8px;
+    width: 345.6px;
+    height: auto;
+    border-style: solid;
+    border-color:  white;
+    border-width: 12.8px;
+    background-color: #F00060;
+    border-radius: 2%;
+}
+
+#pooText2{
+    margin-top: 57.6px;
+    font-family: atkinson;
+    font-size: 16.64px;
+    color: white;
+    width:294.4px;
+    height:358.4px;
+    margin-left: 76.8px;
+}
+
+#pooBottomIcon{
+    width:896px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#pooBottomIcon img{
+    margin-top: 0px;  
+    width: 230.4px;
+    height: auto;
+}
+
+#pooArch{
+    width: 230.4px;
+    height:auto;
+    position:absolute;
+}
+
+/*////////////////footers//////////////////*/
+#footerBack{
+    height:40vw;
+    background-color: #BEBFA8;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footerMain{
+    width:100vw;
+    height:35vw;
+    background-color: #94A177;
+    display:flex;
+}
+
+#legalText{
+    font-family: start2P;
+    font-size: 1.5vw;
+    margin-left: 10vw;
+    width:40vw;
+    height:15vw;
+    color:#1D3024;
+    margin-top: 5vw;
+}
+#learnMore{
+    color:#1D3024;
+    font-family: start2P;
+    font-size: 1.5vw;
+    margin-top: 5vw;
+    margin-left: 10vw;
+
+    display:flex;
+    flex-direction: column;
+}
+
+#learnIcons img{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width:5vw;
+    height:auto;
+    text-decoration: none;
+}
+
+#column2{
+    margin-left: 20vw;
+}
+
+#siteLinks{
+    margin-top: 5vw;
+    color:#1D3024;
+    font-family: start2P;
+    font-size: 1.5vw;
+}
+
+nav ul{
+    font-size: 1.5vw;
+    font-family: start2P;
+    list-style: none;
+    padding : 0px;
+    margin : 0px;
+    margin-top: 1vw;
+    text-align: center;
+    line-height: 3vw;
+}
+
+nav ul a:link{
+    text-decoration: none;
+    color: #545353;
+}
+
+nav ul a:visited{
+    text-decoration: none;
+    color: #545353;
+}
+
+nav ul a:hover{
+    text-decoration: none;
+    color: white;
+}
+#toTop img{
+    width: 2vw;
+    height: auto;
+}
+
+#toTop {
+    width: 2vw;
+    height: 4vw;
+    position: fixed;
+    bottom: 1vw;
+    right: 1vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+/*///////////////ABOUT/////////////////*/
+#aboutBack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3c3e39;
+}
+
+#aboutTag{
+    margin-top: 38.4px;
+    width: 256px;
+    height: 89.6px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #1D3024;
+    border: solid;
+    border-width: 8.96px;
+    border-color: #94A177;
+    border-radius: 2%;
+}
+#aboutTagText{
+    font-family: start2P;
+    font-size: 38.4px;
+    color:white;
+}
+/*///////////////NessAbout/////////////*/
+#nessAbout{
+    margin-top: 89.6px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#nessTalkIMG{
+    width:102.4px;
+    height:auto;
+}
+#nessDialog{
+    margin-left: 25.6px;
+}
+#nessDialogBox{
+    position:relative;
+    margin-top:38.4px;
+    width:832px;
+    height:204.8px;
+    display:flex;
+    align-items: center;
+    background-color: #1D3024;
+    border: solid;
+    border-width: 8.96px;
+    border-color: #94A177;
+    border-radius: 2%;
+}
+#nessDialogText{
+    margin-left: 12.8px;
+    font-family: start2P;
+    font-size: 16.64px;
+    color:white;
+    line-height: 24.32px;
+    text-decoration: none;
+}
+
+#nessDialogTag{
+    position:absolute;
+    top: -51.2px;
+    width:128px;
+    height: 51.2px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #94A177;
+}
+#nessDialogTag div{
+    margin-left: 12.8px;
+    font-size: 25.6px;
+    font-family: start2P;
+    color: #1D3024;
+}
+
+/*///////////////paulaAbout/////////////*/
+#paulaAbout{
+    margin-top: 89.6px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#paulaTalkIMG{
+    width:102.4px;
+    height:auto;
+}
+#paulaDialog{
+    margin-left: 25.6px;
+}
+#paulaDialogBox{
+    margin-top:38.4px;
+    width:832px;
+    height:204.8px;
+    display:flex;
+    align-items: center;
+    background-color: #1D3024;
+    border: solid;
+    border-width: 8.96px;
+    border-color: #94A177;
+    border-radius: 2%;
+    position:relative;
+}
+#paulaDialogText{
+    margin-left: 12.8px;
+    font-family: start2P;
+    font-size: 16.64px;
+    color:white;
+    line-height: 24.32px;
+}
+#paulaDialogTag{
+    position:absolute;
+    top: -51.2px;
+    width:153.6px;
+    height: 51.2px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #94A177;
+}
+#paulaDialogTag div{
+    margin-left: 12.8px;
+    font-size: 25.6px;
+    font-family: start2P;
+    color: #1D3024;
+}
+
+/*///////////////jeffAbout/////////////*/
+#jeffAbout{
+    margin-top: 89.6px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#jeffTalkIMG{
+    width:102.4px;
+    height:auto;
+}
+#jeffDialog{
+    margin-left: 25.6px;
+}
+#jeffDialogBox{
+    position: relative;
+    margin-top:38.4px;
+    width:832px;
+    height:204.8px;
+    display:flex;
+    align-items: center;
+    background-color: #1D3024;
+    border: solid;
+    border-width: 8.96px;
+    border-color: #94A177;
+    border-radius: 2%;
+}
+#jeffDialogText{
+    margin-left: 12.8px;
+    font-family: start2P;
+    font-size: 16.64px;
+    color:white;
+    line-height: 24.32px;
+}
+#jeffDialogTag{
+    position:absolute;
+    top: -51.2px;
+    width:128px;
+    height: 51.2px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #94A177;
+}
+#jeffDialogTag div{
+    margin-left: 12.8px;
+    font-size: 25.6px;
+    font-family: start2P;
+    color: #1D3024;
+}
+
+/*///////////////pooAbout/////////////*/
+#pooAbout{
+    margin-top: 89.6px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#pooTalkIMG{
+    width:102.4px;
+    height:auto;
+}
+#pooDialog{
+    margin-left: 25.6px;
+}
+#pooDialogBox{
+    position:relative;
+    margin-top:38.4px;
+    width:832px;
+    height:204.8px;
+    display:flex;
+    align-items: center;
+    background-color: #1D3024;
+    border: solid;
+    border-width: 8.96px;
+    border-color: #94A177;
+    border-radius: 2%;
+    margin-bottom: 64px;
+}
+#pooDialogText{
+    margin-left: 12.8px;
+    font-family: start2P;
+    font-size: 16.64px;
+    color:white;
+    line-height: 24.32px;
+}
+#pooDialogTag{
+    position:absolute;
+    top: -51.2px;
+    width:102.4px;
+    height: 51.2px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #94A177;
+}
+#pooDialogTag div{
+    margin-left: 12.8px;
+    font-size: 25.6px;
+    font-family: start2P;
+    color: #1D3024;
+}
+
+
+/*//////////////////PSI//////////////////////*/
+#PSIbackNess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(78, 85, 117);
+}
+#PSIbackPaula{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(117, 78, 114);;
+}
+#PSIbackJeff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(107, 117, 78);;
+}
+#PSIbackPoo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(67, 70, 87);
+}
+
+.PSIback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3c3e39;
+}
+
+#descriptionNess,#descriptionPaula,#descriptionJeff,#descriptionPoo{
+    margin-top:32px;
+    font-family: start2P;
+    font-size:22px;
+    white-space: nowrap;
+    margin-bottom: 32px;
+    text-align: center;
+    cursor: pointer;
+}
+#descriptionNess{
+    color:#c6c6df;
+}
+#descriptionPaula{
+    color:#FFADF4;
+}
+#descriptionJeff{
+    color:#1BBF54;
+}
+#descriptionPoo{
+    color:#c6c6df;
+}
+#descriptionNess:hover{
+    color:#e6e6f2;
+}
+#descriptionPaula:hover{
+    color:#fcc1f5;
+}
+#descriptionJeff:hover{
+    color:#4cc275;
+}
+#descriptionPoo:hover{
+    color:#d4d4ed;
+}
+
+#jeffPSIbox{
+    text-align: center;
+    height:300px;
+    margin-top:32px;
+    font-family: start2P;
+    font-size:22px;
+    white-space: nowrap;
+    color:white;
+}
+
+.titles{
+    text-align: center;
+    margin-top:32px;
+    font-family: start2P;
+    font-size:15.36px;
+    color:white;
+    white-space: nowrap;
+}
+
+.PSIback table{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border:solid;
+    width: 768px;
+}
+
+.PSIback table{
+    background-color: #1D3024;
+}
+
+.PSIback th,td{
+    border:solid 2px black;
+    background-color: #94A177;
+    font-size: 16.64px;
+    font-family:atkinson;
+    
+}
+.PSIback th{
+    background-color: #6f7959;
+    color:white;
+}
+
